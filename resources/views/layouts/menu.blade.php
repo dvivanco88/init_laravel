@@ -25,3 +25,10 @@ $paginas = Auth::user()->join('permissions', 'users.rol_id', '=', 'permissions.r
 </li>
 @endif
 
+@if(Auth::user()->rol->name == 'Admin')
+<li class="{{ Request::is('rols*') ? 'active' : '' }}">
+    <a href="{!! route('scaffolding') !!}" target="_blank"><i class="fas fa-file-code"></i><span> Scaffolding</span></a>
+</li>
+@endif
+
+

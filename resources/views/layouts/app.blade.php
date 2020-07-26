@@ -47,7 +47,7 @@
 
                 <!-- Sidebar toggle button-->
 
-                <a href="#" class="sidebar-toggle glyphicon " data-toggle="push-menu" role="button">                    
+                <a href="#" class="sidebar-toggle glyphicon " data-toggle="push-menu" role="button">
                     <span class="sr-only">Toggle navigation</span>
                 </a>
                 <!-- Navbar Right Menu -->

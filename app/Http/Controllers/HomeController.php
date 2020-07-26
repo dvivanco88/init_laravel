@@ -13,7 +13,8 @@ class HomeController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth');
+        $this->middleware('auth', ['except' => 'web_page']);
+        
     }
 
     /**
@@ -21,6 +22,10 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
+    public function web_page(){
+        return view('web_page.index');
+    }
+
     public function index()
     {
         $chart1 = \Chart::title([

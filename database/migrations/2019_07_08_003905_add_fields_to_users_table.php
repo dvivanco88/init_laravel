@@ -14,9 +14,9 @@ class AddFieldsToUsersTable extends Migration
     public function up()
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->string('first_lastname');
-            $table->string('second_lastname');            
-            $table->boolean('enterprise');
+            $table->string('first_lastname')->nullable();
+            $table->string('second_lastname')->nullable();            
+            $table->boolean('enterprise')->default(false);
             $table->softDeletes();
 
         });

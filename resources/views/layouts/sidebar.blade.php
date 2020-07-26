@@ -6,7 +6,7 @@
         <!-- Sidebar user panel (optional) -->
         <div class="user-panel">
             <div class="pull-left image">
-               <img src='{!! Auth::user()->image == "no_photo" ? "../../images/no_photo.jpg" : "../../uploads/users/". Auth::user()->id ."/".Auth::user()->image !!}' class="img-circle"
+               <img style="width: 45px; height: 45px;" src='{!! Auth::user()->image == "no_photo" ? "../../images/no_photo.jpg" : "../../uploads/users/". Auth::user()->id ."/".Auth::user()->image !!}' class="img-circle"
                      alt="User Image"/>
             </div>
             <div class="pull-left info">
